@@ -1,9 +1,13 @@
+#include <assert.h>
 #include <iostream>
 using std::cout, std::cin, std::endl;
 #include "Frequency.h"
 #include "frequency_constants.h"
 
+void tests();
+
 int main() {
+    tests();
     Frequency f{100}; // to test
     Frequency very_high{30000};
     ++f.value;
@@ -32,3 +36,10 @@ int main() {
  *
  *
  * */
+
+// TESTS
+// Eventually move to a test file.
+// Function is here for now to add tests quickly without worrying about linking.
+void tests() {
+    assert(true);
+}

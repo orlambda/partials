@@ -1,1 +1,2 @@
 - Write tests for Frequency functions
+- Move tests to separate file
