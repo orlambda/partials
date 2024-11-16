@@ -1,12 +1,18 @@
 #include <iostream>
-using namespace std;
+using std::cout, std::cin, std::endl;
+#include "Frequency.h"
+
+// Where to keep these to avoid global variables?
+constexpr Frequency A4{440};
+constexpr Frequency lower_limit{20};
+constexpr Frequency upper_limit{20000};
 
 int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
+    Frequency f{100}; // to test
+    ++f.value;
+    cout << A4.value << endl; // 440
+    cout << f.value << endl; // 101
 }
-
-
 
 /*
  * Need:

@@ -3,4 +3,6 @@ project(partials)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(partials main.cpp)
+add_executable(partials main.cpp
+        Frequency.cpp
+        Frequency.h)
