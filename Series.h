@@ -13,7 +13,7 @@ class Series {
 public:
     // Taking a Frequency parameter would require overloading the constructor as double value() is the meaningful value.
     // This requires adding a return type to Frequency
-    Series(double f);
+    Series(const double fundamental);
     vector<Frequency> values;
 private:
 };
