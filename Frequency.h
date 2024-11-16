@@ -11,6 +11,7 @@ public:
         value = f;
     }
     double value;
+    bool is_audible();
 };
 
 #endif //FREQUENCY_H

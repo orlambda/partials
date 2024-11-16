@@ -1,17 +1,16 @@
 #include <iostream>
 using std::cout, std::cin, std::endl;
 #include "Frequency.h"
-
-// Where to keep these to avoid global variables?
-constexpr Frequency A4{440};
-constexpr Frequency lower_limit{20};
-constexpr Frequency upper_limit{20000};
+#include "frequency_constants.h"
 
 int main() {
     Frequency f{100}; // to test
+    Frequency very_high{30000};
     ++f.value;
     cout << A4.value << endl; // 440
     cout << f.value << endl; // 101
+    cout << f.value << "Hz audible, 1/0: " << f.is_audible() << endl;
+    cout << very_high.value << "Hz audible, 1/0: " << very_high.is_audible() << endl;
 }
 
 /*

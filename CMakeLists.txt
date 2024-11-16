@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(partials main.cpp
         Frequency.cpp
-        Frequency.h)
+        Frequency.h
+        frequency_constants.h)
