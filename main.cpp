@@ -5,6 +5,7 @@ using std::cout, std::cin, std::endl;
 using std::vector;
 #include "Frequency.h"
 #include "frequency_constants.h"
+#include "Series.h"
 
 void tests();
 
@@ -63,4 +64,20 @@ void tests() {
             assert(!Frequency{f}.is_audible());
         }
     }
+// Test Series
+    // Test Series constructor
+    {
+        const vector<double> invalid_fundamentals {-100, -1, 0, 0.1, 0.9999, 1, 20000.00001, 999999999};
+        for (const auto& f : invalid_fundamentals) {
+            assert(Series{f}.values.size() == 0);
+        }
+    }
+    {
+        // Test for non-empty vectors
+        const vector<double> valid_fundamentals {8, 20, 20.00001, 440, 19999, 19999.9999, 20000};
+        for (const auto& f : valid_fundamentals) {
+            assert(Series{f}.values.size() != 0);
+        }
+    }
+
 }

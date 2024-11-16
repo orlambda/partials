@@ -7,6 +7,8 @@
 
 class Frequency {
 public:
+    // TODO: check if can create Frequency during runtime from user input
+        // TODO: if not: constructor cannot be constexpr?
     constexpr Frequency(double f) {
         // TODO: Prevent negative frequencies? Warning: tests() currently uses negative values
         value = f;

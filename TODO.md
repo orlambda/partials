@@ -1,1 +1,3 @@
 - Move tests to separate file
+- Add default value to Frequency
+- Disallow negative frequencies
