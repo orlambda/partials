@@ -8,6 +8,7 @@
 class Frequency {
 public:
     constexpr Frequency(double f) {
+        // TODO: Prevent negative frequencies? Warning: tests() currently uses negative values
         value = f;
     }
     double value;

@@ -1,20 +1,15 @@
 #include <assert.h>
 #include <iostream>
 using std::cout, std::cin, std::endl;
+#include <vector>
+using std::vector;
 #include "Frequency.h"
 #include "frequency_constants.h"
 
 void tests();
 
 int main() {
-    tests();
-    Frequency f{100}; // to test
-    Frequency very_high{30000};
-    ++f.value;
-    cout << A4.value << endl; // 440
-    cout << f.value << endl; // 101
-    cout << f.value << "Hz audible, 1/0: " << f.is_audible() << endl;
-    cout << very_high.value << "Hz audible, 1/0: " << very_high.is_audible() << endl;
+    tests(); // TODO: delete this when tests have been moved to separate file
 }
 
 /*
@@ -41,5 +36,31 @@ int main() {
 // Eventually move to a test file.
 // Function is here for now to add tests quickly without worrying about linking.
 void tests() {
-    assert(true);
+// Test Frequency
+    // Test Frequency.value
+    {
+        Frequency f1{0};
+        assert(f1.value == 0);
+        assert(Frequency(40).value == 40);
+        const vector<double> frequencies {-4000, -0.00001, 0, 1, 20, 20000, 20000.01};
+        for (const auto& f : frequencies) {
+            assert(Frequency{f}.value == f);
+        }
+    }
+    // Test Frequency.is_audible()
+    {
+        // Test audible frequencies
+        const vector<double> audible_frequencies {20, 20.0002, 400, 400.5,
+            10000, 19999, 19999.99999999, 20000};
+        for (const auto& f : audible_frequencies) {
+            assert(Frequency{f}.is_audible());
+        }
+        // Test inaudible frequencies
+        const vector<double> inaudible_frequencies
+            {-9999999999, -1, -0.00001, 0, 0.00001, 1, 19, 19.1, 19.5, 19.9999999, 20000.00000001, 20000.1,
+                20000.5, 50000, 1000000000000};
+        for (const auto& f : inaudible_frequencies) {
+            assert(!Frequency{f}.is_audible());
+        }
+    }
 }
