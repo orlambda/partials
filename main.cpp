@@ -73,10 +73,21 @@ void tests() {
         }
     }
     {
+        // TODO: read about double precision as 19999.9999 is being rounded up at some point (where?)
         // Test for non-empty vectors
         const vector<double> valid_fundamentals {8, 20, 20.00001, 440, 19999, 19999.9999, 20000};
         for (const auto& f : valid_fundamentals) {
             assert(Series{f}.values.size() != 0);
+        }
+    }
+    {
+        // TODO: check adding one more element to s would go above upper_limit.value()
+        double fundamental = 20;
+        Series s{fundamental};
+        int i = 1;
+        for (auto& partial : s.values) {
+            assert(partial.value == fundamental * i);
+            i++;
         }
     }
 
