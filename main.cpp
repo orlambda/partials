@@ -4,7 +4,7 @@ using std::cout, std::cin, std::endl;
 #include <vector>
 using std::vector;
 #include "Frequency.h"
-#include "frequency_constants.h"
+#include "freq.h"
 #include "Series.h"
 
 void tests();

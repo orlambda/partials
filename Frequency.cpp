@@ -3,7 +3,7 @@
 //
 
 #include "Frequency.h"
-#include "frequency_constants.h"
+#include "freq.h"
 
 // TODO: Why does this not compile when defined in this file? I think because constexpr must be in-line
 // constexpr Frequency::Frequency(double f) {
@@ -11,5 +11,5 @@
 // }
 
 bool Frequency::is_audible() {
-    return (value >= lower_limit.value && value <= upper_limit.value);
+    return (value >= freq::lower_limit && value <= freq::upper_limit);
 }
