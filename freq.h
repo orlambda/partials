@@ -9,8 +9,8 @@
 
 namespace freq {
     constexpr double A4{440};
-    constexpr double lower_limit{20};
-    constexpr double upper_limit{20000};
+    constexpr double min_audible{20};
+    constexpr double max_audible{20000};
 }
 
 #endif //FREQUENCY_CONSTANTS_H

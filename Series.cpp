@@ -12,7 +12,7 @@ Series::Series(const double fundamental) {
     if (fundamental <= 1) // Could be 0 - avoid making massive vectors from tiny fundamentals
         {return;} // TODO: change to throw exception? No point trying to catch exceptions in main just yet
     // TODO: refactor to avoid fundamental*i happening twice
-    for (int i = 1; fundamental * i <= freq::upper_limit; ++i) {
+    for (int i = 1; fundamental * i <= freq::max_audible; ++i) {
         // TODO: pass a function to calculate partial based on i, allowing distorted series
         double partial = fundamental * i;
         values.push_back(Frequency{partial}); }

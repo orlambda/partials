@@ -11,5 +11,5 @@
 // }
 
 bool Frequency::is_audible() {
-    return (value >= freq::lower_limit && value <= freq::upper_limit);
+    return (value >= freq::min_audible && value <= freq::max_audible);
 }
