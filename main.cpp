@@ -10,19 +10,15 @@ using std::vector;
 void tests();
 Frequency get_freq();
 
-int main() {
-    tests(); // TODO: delete this when tests have been moved to separate file
-    auto f = get_freq();
-    f.value++;
-    cout << f.value << endl;
-}
-
-Frequency get_freq() {
-    cout << "Enter frequency: ";
-    double x;
-    cin >> x;
-    return Frequency{x};
-}
+/*
+ * Visual depiction: x = time, y = frequency
+ * lengths of lines
+ * diagonals
+ * line = 2 points, a, b
+ * class: line
+ * given point a, and length of line, and either angle or x of b, (overloading? two functions?)
+ *      return y of b
+ */
 
 /*
  * Need:
@@ -43,6 +39,20 @@ Frequency get_freq() {
  *
  *
  * */
+
+int main() {
+    tests(); // TODO: delete this when tests have been moved to separate file
+    auto f = get_freq();
+    f.value++;
+    cout << f.value << endl;
+}
+
+Frequency get_freq() {
+    cout << "Enter frequency: ";
+    double x;
+    cin >> x;
+    return Frequency{x};
+}
 
 // TESTS
 // Eventually move to a test file.

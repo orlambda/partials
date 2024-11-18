@@ -1,20 +1,6 @@
 # ninja log v5
-4	33	1731784698734522393	CMakeFiles/partials.dir/Frequency.cpp.o	75d44d0beb55dd4b
-275	308	1731787772465037068	partials	b0d5fdd9c9cb07ec
-4	275	1731787772430984139	CMakeFiles/partials.dir/Series.cpp.o	49fa83829a0daaf
-3	283	1731787729974611080	CMakeFiles/partials.dir/main.cpp.o	12f10367bbc84370
-2	39	1731869384002719566	build.ninja	96f49f0dbea36bc1
-3	30	1731869384037199427	CMakeFiles/partials.dir/Frequency.cpp.o	75d44d0beb55dd4b
-5	278	1731869439691446190	CMakeFiles/partials.dir/Series.cpp.o	49fa83829a0daaf
-5	288	1731869439701505097	CMakeFiles/partials.dir/main.cpp.o	12f10367bbc84370
-288	1698	1731869441112391679	partials	b0d5fdd9c9cb07ec
 13	39	1731870439520115317	CMakeFiles/partials.dir/Frequency.cpp.o	75d44d0beb55dd4b
-13	310	1731870439788935468	CMakeFiles/partials.dir/Series.cpp.o	49fa83829a0daaf
-13	324	1731870439803561889	CMakeFiles/partials.dir/main.cpp.o	12f10367bbc84370
-324	360	1731870439840489440	partials	b0d5fdd9c9cb07ec
-9	477	1731898797579748448	CMakeFiles/partials.dir/main.cpp.o	12f10367bbc84370
-477	672	1731898797776116466	partials	b0d5fdd9c9cb07ec
-3	293	1731898838807850983	CMakeFiles/partials.dir/main.cpp.o	12f10367bbc84370
-293	319	1731898838836058062	partials	b0d5fdd9c9cb07ec
-4	292	1731898862933700015	CMakeFiles/partials.dir/main.cpp.o	12f10367bbc84370
 293	321	1731898862963519162	partials	b0d5fdd9c9cb07ec
+13	310	1731870439788935468	CMakeFiles/partials.dir/Series.cpp.o	49fa83829a0daaf
+4	292	1731898862933700015	CMakeFiles/partials.dir/main.cpp.o	12f10367bbc84370
+2	39	1731960228268102303	build.ninja	96f49f0dbea36bc1
