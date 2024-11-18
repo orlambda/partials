@@ -8,9 +8,20 @@ using std::vector;
 #include "Series.h"
 
 void tests();
+Frequency get_freq();
 
 int main() {
     tests(); // TODO: delete this when tests have been moved to separate file
+    auto f = get_freq();
+    f.value++;
+    cout << f.value << endl;
+}
+
+Frequency get_freq() {
+    cout << "Enter frequency: ";
+    double x;
+    cin >> x;
+    return Frequency{x};
 }
 
 /*
