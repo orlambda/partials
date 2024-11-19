@@ -8,4 +8,7 @@ add_executable(partials main.cpp
         Frequency.h
         Series.cpp
         Series.h
-        freq.h)
+        freq.h
+        Point.cpp
+        Point.h
+        geom.h)

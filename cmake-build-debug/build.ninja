@@ -67,6 +67,12 @@ build CMakeFiles/partials.dir/Series.cpp.o: CXX_COMPILER__partials_unscanned_Deb
   OBJECT_DIR = CMakeFiles/partials.dir
   OBJECT_FILE_DIR = CMakeFiles/partials.dir
 
+build CMakeFiles/partials.dir/Point.cpp.o: CXX_COMPILER__partials_unscanned_Debug /Users/orlandoshamlou/Documents/Coding/Projects/partials/Point.cpp || cmake_object_order_depends_target_partials
+  DEP_FILE = CMakeFiles/partials.dir/Point.cpp.o.d
+  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/partials.dir
+  OBJECT_FILE_DIR = CMakeFiles/partials.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target partials
@@ -75,7 +81,7 @@ build CMakeFiles/partials.dir/Series.cpp.o: CXX_COMPILER__partials_unscanned_Deb
 #############################################
 # Link the executable partials
 
-build partials: CXX_EXECUTABLE_LINKER__partials_Debug CMakeFiles/partials.dir/main.cpp.o CMakeFiles/partials.dir/Frequency.cpp.o CMakeFiles/partials.dir/Series.cpp.o
+build partials: CXX_EXECUTABLE_LINKER__partials_Debug CMakeFiles/partials.dir/main.cpp.o CMakeFiles/partials.dir/Frequency.cpp.o CMakeFiles/partials.dir/Series.cpp.o CMakeFiles/partials.dir/Point.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/partials.dir
   POST_BUILD = :

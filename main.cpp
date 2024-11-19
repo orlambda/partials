@@ -11,6 +11,7 @@ void tests();
 Frequency get_freq();
 
 /*
+ * Geometrical depiction
  * Visual depiction: x = time, y = frequency
  * lengths of lines
  * diagonals
