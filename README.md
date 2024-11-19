@@ -1,6 +1,7 @@
 # Partials
 ## Outline
-Experimental project to manipulate the harmonic series for musical composition
+Experimental project to manipulate the harmonic series for musical composition,
+using a coordinate system where any point(x, y) represents a frequency (y) at a point in time (x). 
 
 The purpose and scope of this project have yet to be decided.
 
